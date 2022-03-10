@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../Pay360Test/Pay360.framework">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

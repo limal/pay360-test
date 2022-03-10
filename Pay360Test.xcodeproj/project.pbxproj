@@ -13,6 +13,8 @@
 		B20C491127D96C6000749576 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20C491027D96C6000749576 /* Preview Assets.xcassets */; };
 		B20C491C27D96C6100749576 /* Pay360TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C491B27D96C6100749576 /* Pay360TestTests.swift */; };
 		B20C492727D96C6100749576 /* Pay360TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20C492627D96C6100749576 /* Pay360TestUITests.swift */; };
+		B20C493D27D96E2500749576 /* Pay360.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20C493827D96E1900749576 /* Pay360.framework */; };
+		B20C493E27D96E2500749576 /* Pay360.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B20C493827D96E1900749576 /* Pay360.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +34,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B20C493F27D96E2500749576 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B20C493E27D96E2500749576 /* Pay360.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B20C490627D96C5D00749576 /* Pay360Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pay360Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20C490927D96C5D00749576 /* Pay360TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay360TestApp.swift; sourceTree = "<group>"; };
@@ -45,6 +61,7 @@
 		B20C492227D96C6100749576 /* Pay360TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pay360TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20C492627D96C6100749576 /* Pay360TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pay360TestUITests.swift; sourceTree = "<group>"; };
 		B20C492827D96C6100749576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20C493827D96E1900749576 /* Pay360.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pay360.framework; path = Pay360Test/Pay360.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20C493D27D96E2500749576 /* Pay360.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +93,7 @@
 		B20C48FD27D96C5D00749576 = {
 			isa = PBXGroup;
 			children = (
+				B20C493727D96E0900749576 /* Frameworks */,
 				B20C490827D96C5D00749576 /* Pay360Test */,
 				B20C491A27D96C6100749576 /* Pay360TestTests */,
 				B20C492527D96C6100749576 /* Pay360TestUITests */,
@@ -130,6 +149,14 @@
 			path = Pay360TestUITests;
 			sourceTree = "<group>";
 		};
+		B20C493727D96E0900749576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20C493827D96E1900749576 /* Pay360.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +167,7 @@
 				B20C490227D96C5D00749576 /* Sources */,
 				B20C490327D96C5D00749576 /* Frameworks */,
 				B20C490427D96C5D00749576 /* Resources */,
+				B20C493F27D96E2500749576 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -419,7 +447,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Pay360Test/Preview Content\"";
+				DEVELOPMENT_TEAM = 8645J3BA7H;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pay360Test",
+				);
 				INFOPLIST_FILE = Pay360Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -440,7 +473,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Pay360Test/Preview Content\"";
+				DEVELOPMENT_TEAM = 8645J3BA7H;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pay360Test",
+				);
 				INFOPLIST_FILE = Pay360Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
